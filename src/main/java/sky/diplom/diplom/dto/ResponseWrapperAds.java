@@ -2,13 +2,22 @@ package sky.diplom.diplom.dto;
 
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
+
 
 @Data
-public class ResponseWrapperAds {
+public class ResponseWrapperAds<T> {
 
     private int count;
-    private List<AdsDto> result = new ArrayList<>();
+    private Collection<T> results;
 
+    public static <T> ResponseWrapperAds<T> of(Collection<T> results) {
+        ResponseWrapperAds<T> responseWrapper = new ResponseWrapperAds<>();
+        if (results == null) {
+            return responseWrapper;
+        }
+        responseWrapper.results = results;
+        responseWrapper.count = results.size();
+        return responseWrapper;
+    }
 }
