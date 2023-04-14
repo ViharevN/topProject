@@ -72,6 +72,9 @@ ___
 ---
 ## Demonstration of the work
 [Ссылка на демо](https://disk.yandex.ru/i/YkERK8iNsajjJA)
+
+https://user-images.githubusercontent.com/115582247/232051495-37fd5527-41f5-4d83-b64a-fbae048993e9.mp4
+
 ___
 <div id="badges" align="center">
 <a
